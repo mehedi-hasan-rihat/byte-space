@@ -1,5 +1,13 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
+import CourseCategories from "@/components/CourseCategories";
+import CoursesGrid from "@/components/CoursesGrid";
 
 export default function Home() {
-  return <div className=""></div>;
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+    </main>
+  );
 }
