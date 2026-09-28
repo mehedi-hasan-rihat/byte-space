@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --persian-blue: #003BE2;
+  --shuttle-gray: #E5E6E8
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
 
   /* Brand colors */
   --color-persian-blue: var(--persian-blue);
+  --color-shuttle-gray: var(--shuttle-gray)
 
 }
 
@@ -21,4 +23,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@utility grid-pattern {
+  background-image:
+    linear-gradient(to right, #dde3f517 1px, transparent 1px),
+    linear-gradient(to bottom, #dde3f517 1px, transparent 1px);
+  background-size: 72px 72px;
 }

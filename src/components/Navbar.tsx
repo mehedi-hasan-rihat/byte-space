@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
-    <nav className="bg-persian-blue text-white">
+    <nav className="bg-persian-blue text-white grid-pattern">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex justify-center gap-2">
+        <a href="#" className="flex justify-center gap-2">
           <svg
             width="29"
             height="32"
