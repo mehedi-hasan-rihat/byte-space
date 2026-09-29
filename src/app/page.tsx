@@ -1,7 +1,6 @@
 import { CourseExplorer } from "@/components/CursorExplore";
 import { CreatorCTA } from "@/components/CreatorCTA";
 import { Footer } from "@/components/Footer";
-import { Growth } from "@/components/Growth";
 import Hero from "@/components/Hero";
 import { LogoStrip } from "@/components/LogoStrip";
 import Navbar from "@/components/Navbar";
