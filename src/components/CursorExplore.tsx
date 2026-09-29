@@ -202,7 +202,7 @@ function DifficultyBadge() {
   );
 }
 
-function CourseCard({ course }: { course: (typeof courses)[number] }) {
+export function CourseCard({ course }: { course: (typeof courses)[number] }) {
   return (
     <article className="overflow-hidden rounded-3xl border border-[#CED0D3] p-4 shadow-subtle transition-transform hover:-translate-y-1">
       <div className="relative aspect-341/195 rounded-xl overflow-hidden">

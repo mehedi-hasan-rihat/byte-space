@@ -31,3 +31,14 @@ body {
     linear-gradient(to bottom, #dde3f517 1px, transparent 1px);
   background-size: 72px 72px;
 }
+
+@utility soft-bg {
+  background:
+    radial-gradient(circle at 15% 20%, #E9FF8A 0, transparent 40%),
+    radial-gradient(circle at 90% 60%, #DDE3FF 0, transparent 45%),
+    #fff;
+}
+
+@utility blob {
+  background: radial-gradient(circle at 30% 30%, #E6FF6B, #B7F000);
+}
