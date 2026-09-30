@@ -59,19 +59,9 @@ export function Testimonials() {
               key={t.name}
               className="flex flex-col gap-6 rounded-3xl border border-[#E5E6E8] bg-white p-8 transition-shadow hover:shadow-lg"
             >
-              {/* Quote icon */}
-              <QuoteIcon />
-
-              {/* Quote text */}
-              <p className="flex-1 text-[15px] leading-relaxed text-[#4B4C53]">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-
-              {/* Divider */}
-              <div className="h-px bg-[#F0F0F0]" />
 
               {/* Avatar + name */}
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
                   <Image src={t.image} alt={t.name} fill className="object-cover" />
                 </div>
@@ -80,6 +70,13 @@ export function Testimonials() {
                   <p className="text-[13px] font-medium text-[#003BE2]">{t.role}</p>
                 </div>
               </div>
+
+              {/* Quote text */}
+              <p className="flex-1 text-[15px] leading-relaxed text-[#4B4C53]">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+
+              
             </div>
           ))}
         </div>

@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --persian-blue: #003BE2;
-  --shuttle-gray: #E5E6E8
+  --persian-blue: #003be2;
+  --shuttle-gray: #e5e6e8;
 }
 
 @theme inline {
@@ -15,8 +15,7 @@
 
   /* Brand colors */
   --color-persian-blue: var(--persian-blue);
-  --color-shuttle-gray: var(--shuttle-gray)
-
+  --color-shuttle-gray: var(--shuttle-gray);
 }
 
 body {
@@ -41,11 +40,19 @@ body {
 
 @utility soft-bg {
   background:
-    radial-gradient(circle at 15% 20%, #E9FF8A 0, transparent 40%),
-    radial-gradient(circle at 90% 60%, #DDE3FF 0, transparent 45%),
+    radial-gradient(
+      circle at 70% 15%,
+      #e9ff8a 0,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 5% 90%,
+      #dde3ff 0,
+      transparent 40%
+    ),
     #fff;
 }
 
 @utility blob {
-  background: radial-gradient(circle at 30% 30%, #E6FF6B, #B7F000);
+  background: radial-gradient(circle at 30% 30%, #e6ff6b, #b7f000);
 }
