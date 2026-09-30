@@ -259,7 +259,7 @@ export function CourseCard({ course }: { course: (typeof courses)[number] }) {
             {reviewImages.map((src, i) => (
               <div
                 key={src}
-                className="relative h-7 w-7 overflow-hidden rounded-full border-2 border-white"
+                className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white"
                 style={{ marginLeft: i === 0 ? 0 : "-8px", zIndex: i }}
               >
                 <Image
