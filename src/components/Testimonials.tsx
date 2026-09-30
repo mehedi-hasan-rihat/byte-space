@@ -24,17 +24,6 @@ const testimonials = [
   },
 ];
 
-function QuoteIcon() {
-  return (
-    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M0 24V14.4C0 10.56 0.96 7.36 2.88 4.8C4.864 2.24 7.68 0.64 11.328 0L12.864 2.496C10.016 3.168 7.904 4.448 6.528 6.336C5.152 8.16 4.448 10.304 4.416 12.768H8.832V24H0ZM19.136 24V14.4C19.136 10.56 20.096 7.36 22.016 4.8C24 2.24 26.816 0.64 30.464 0L32 2.496C29.152 3.168 27.04 4.448 25.664 6.336C24.288 8.16 23.584 10.304 23.552 12.768H27.968V24H19.136Z"
-        fill="#E5E6E8"
-      />
-    </svg>
-  );
-}
-
 export function Testimonials() {
   return (
     <section className="soft-bg py-24">

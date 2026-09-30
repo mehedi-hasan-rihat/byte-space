@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import { LogoStrip } from "@/components/LogoStrip";
 import Navbar from "@/components/Navbar";
 import { Testimonials } from "@/components/Testimonials";
+import { Growth } from "@/components/Growth";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Hero />
       <LogoStrip />
       <CourseExplorer />
+      <Growth />
+
       <CreatorCTA />
       <Testimonials />
       <Footer />
