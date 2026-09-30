@@ -4,7 +4,6 @@ const testimonials = [
   {
     name: "Sarah M.",
     role: "Enthusiastic Learner",
-    roleColor: "text-[#003BE2]",
     quote:
       "ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning.",
     image: "/creator.png",
@@ -12,7 +11,6 @@ const testimonials = [
   {
     name: "James L.",
     role: "Lifelong Learner",
-    roleColor: "text-[#003BE2]",
     quote:
       "I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development.",
     image: "/creator_2.png",
@@ -20,61 +18,68 @@ const testimonials = [
   {
     name: "Alex B.",
     role: "Inspired Creator",
-    roleColor: "text-[#003BE2]",
     quote:
       "As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally.",
     image: "/creator_3.png",
   },
 ];
 
+function QuoteIcon() {
+  return (
+    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0 24V14.4C0 10.56 0.96 7.36 2.88 4.8C4.864 2.24 7.68 0.64 11.328 0L12.864 2.496C10.016 3.168 7.904 4.448 6.528 6.336C5.152 8.16 4.448 10.304 4.416 12.768H8.832V24H0ZM19.136 24V14.4C19.136 10.56 20.096 7.36 22.016 4.8C24 2.24 26.816 0.64 30.464 0L32 2.496C29.152 3.168 27.04 4.448 25.664 6.336C24.288 8.16 23.584 10.304 23.552 12.768H27.968V24H19.136Z"
+        fill="#E5E6E8"
+      />
+    </svg>
+  );
+}
+
 export function Testimonials() {
   return (
-    <section className="soft-bg py-20">
-      <div className="max-w-300 mx-auto px-5">
+    <section className="soft-bg py-24">
+      <div className="mx-auto max-w-300 px-6">
 
         {/* Header */}
-        <div className="grid md:grid-cols-2 gap-6 items-start mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-[#040819]">
-            Discover What Our Community Is Saying
+        <div className="grid items-start gap-8 md:grid-cols-2 mb-14">
+          <h2 className="text-[44px] font-bold leading-tight tracking-tight text-[#040819]">
+            Discover What Our<br />Community Is Saying
           </h2>
-          <p className="text-sm text-[#82868E] leading-relaxed">
+          <p className="text-[16px] leading-relaxed text-[#82868E] max-w-115">
             At ByteSpace, our vibrant community of learners and creators is at
-            the heart of what we do. Hear directly from those who have
-            experienced the transformative journey of learning and creating on
-            our platform. Explore testimonials that reflect the diverse
-            perspectives of enthusiastic learners and accomplished creators.
+            the heart of what we do. Hear directly from those who have experienced
+            the transformative journey of learning and creating on our platform.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white rounded-2xl p-6 border border-[#E5E6E8] flex flex-col gap-5 hover:shadow-md w-[374px] transition-shadow"
+              className="flex flex-col gap-6 rounded-3xl border border-[#E5E6E8] bg-white p-8 transition-shadow hover:shadow-lg"
             >
-              {/* Avatar */}
-              <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {/* Quote icon */}
+              <QuoteIcon />
 
-              {/* Name + role */}
-              <div>
-                <p className="font-bold text-[#040819] text-base">{t.name}</p>
-                <p className={`text-sm font-medium mt-0.5 ${t.roleColor}`}>
-                  {t.role}
-                </p>
-              </div>
-
-              {/* Quote */}
-              <p className="text-sm text-[#4B4C53] leading-relaxed flex-1">
+              {/* Quote text */}
+              <p className="flex-1 text-[15px] leading-relaxed text-[#4B4C53]">
                 &ldquo;{t.quote}&rdquo;
               </p>
+
+              {/* Divider */}
+              <div className="h-px bg-[#F0F0F0]" />
+
+              {/* Avatar + name */}
+              <div className="flex items-center gap-4">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                  <Image src={t.image} alt={t.name} fill className="object-cover" />
+                </div>
+                <div>
+                  <p className="text-[15px] font-bold text-[#040819]">{t.name}</p>
+                  <p className="text-[13px] font-medium text-[#003BE2]">{t.role}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
