@@ -16,6 +16,14 @@ export default function Hero() {
         style={{ top: "580px", width: "1150px", height: "1150px" }}
       />
 
+           {/* Large lime circle — bottom center */}
+      <div
+        className="absolute left-1/2 -translate-x-1/2 rounded-full bg-[#003BE2]"
+        style={{ top: "900px", width: "650px", height: "650px" }}
+      />
+
+
+
       {/* ── Main content wrapper ── */}
       <div className="relative z-10 mx-auto flex max-w-300 flex-col items-center px-6 pt-44">
         {/* Heading */}
