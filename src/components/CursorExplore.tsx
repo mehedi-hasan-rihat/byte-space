@@ -236,7 +236,7 @@ export function CourseExplorer() {
               className="flex flex-col items-center gap-3 rounded-3xl border border-[#E5E6E8] bg-white px-3 py-7 text-center transition-shadow hover:shadow-md"
             >
               <div>{icon}</div>
-              <span className="text-[16px] font-semibold text-[#242528]">{name}</span>
+              <span className="text-[16px] font-medium text-[#242528]">{name}</span>
             </button>
           ))}
         </div>
