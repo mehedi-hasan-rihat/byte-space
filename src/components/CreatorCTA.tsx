@@ -8,7 +8,7 @@ export function CreatorCTA() {
 
       {/* Content */}
       <div className="flex flex-col justify-center items-center space-y-10 max-w-241 mx-auto text-center">
-        <h2 className="text-[48px] font-bold leading-tight tracking-tight max-w-177.5">
+        <h2 className="text-[48px] font-bold leading-tight tracking-tight max-w-177.5 font-poppins">
           Unlock Your Potential as a Creator with ByteSpace
         </h2>
         <p className=" text-[16px] leading-relaxed text-white/80">
@@ -21,7 +21,7 @@ export function CreatorCTA() {
         <div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 rounded-full bg-[#D4FB20] px-7 py-3.5 text-[15px] font-bold text-[#040819] transition hover:bg-[#c5ec16]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#D4FB20] px-6 py-2.5 text-[16px] font-medium text-[#242528] transition hover:bg-[#c5ec16]"
           >
             Join as Creator
           </a>

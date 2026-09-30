@@ -31,13 +31,11 @@ export function Testimonials() {
 
         {/* Header */}
         <div className="grid items-start gap-8 md:grid-cols-2 mb-14">
-          <h2 className="text-[44px] font-bold leading-tight tracking-tight text-[#040819]">
+          <h2 className="text-[44px] font-bold leading-tight tracking-tight text-[#040819] font-poppins">
             Discover What Our<br />Community Is Saying
           </h2>
           <p className="text-[16px] leading-relaxed text-[#82868E] max-w-115">
-            At ByteSpace, our vibrant community of learners and creators is at
-            the heart of what we do. Hear directly from those who have experienced
-            the transformative journey of learning and creating on our platform.
+            At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
           </p>
         </div>
 

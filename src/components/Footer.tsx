@@ -30,7 +30,7 @@ export function Footer() {
             <path d="M18.375 10.5C24.174 10.5 28.875 15.201 28.875 21H21C15.201 21 10.5 16.299 10.5 10.5L18.375 10.5Z" fill="#D4FB20" />
             <path d="M18.375 31.5C24.174 31.5 28.875 26.799 28.875 21H21C15.201 21 10.5 25.701 10.5 31.5L18.375 31.5Z" fill="#D4FB20" />
           </svg>
-          <span className="text-[22px] font-bold tracking-tight text-black">ByteSpace</span>
+          <span className="text-[22px] font-bold tracking-tight text-black" style={{ fontFamily: "var(--font-clash)" }}>ByteSpace</span>
         </a>
 
             <p className="mt-4 text-[14px] leading-relaxed text-[#82868E]">

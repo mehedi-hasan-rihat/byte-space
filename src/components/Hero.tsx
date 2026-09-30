@@ -9,30 +9,25 @@ export default function Hero() {
       {/* Grid overlay */}
       <div className="hero-grid absolute inset-0 z-0" />
 
-      {/* ── Decorative circles ── */}
-      {/* Large lime circle — bottom center */}
-      <div
+=      <div
         className="absolute left-1/2 -translate-x-1/2 rounded-full bg-[#D4FB20]"
         style={{ top: "580px", width: "1150px", height: "1150px" }}
       />
 
-           {/* Large lime circle — bottom center */}
       <div
         className="absolute left-1/2 -translate-x-1/2 rounded-full bg-[#003BE2]"
         style={{ top: "900px", width: "650px", height: "650px" }}
       />
 
-
-
       {/* ── Main content wrapper ── */}
       <div className="relative z-10 mx-auto flex max-w-300 flex-col items-center px-6 pt-44">
         {/* Heading */}
-        <h1 className="max-w-217.5 text-center text-[72px] font-semibold leading-[1.15] tracking-[-1px] text-white">
+        <h1 className="max-w-217.5 text-center text-[72px] font-semibold leading-[1.15] tracking-[-1px] text-white font-poppins">
           Get Access to Hundreds Courses Available
         </h1>
 
         {/* Sub‑heading */}
-        <p className="mt-7 max-w-140 text-center text-[18px] leading-[1.7] text-[#E5E6E8]">
+        <p className="mt-7 text-center text-[18px] leading-[1.7] text-[#E5E6E8]">
           Unlock your creativity, gain valuable knowledge, and grow your
           business with our wide range of courses.
         </p>
@@ -71,10 +66,7 @@ export default function Hero() {
           className="relative mt-14 flex justify-center"
           style={{ height: "460px", width: "900px" }}
         >
-          <div
-            className="absolute left-1/2 -translate-x-1/2 bottom-0 -z-20"
-          
-          >
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-0 -z-20">
             <Image
               src="/course_progress.png"
               alt="Student learning online"

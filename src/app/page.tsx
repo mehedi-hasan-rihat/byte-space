@@ -15,7 +15,6 @@ export default function Home() {
       <LogoStrip />
       <CourseExplorer />
       <Growth />
-
       <CreatorCTA />
       <Testimonials />
       <Footer />
