@@ -22,9 +22,9 @@ export default function Navbar() {
 
         {/* Right actions */}
         <div className="flex items-center gap-6 text-[15px] text-white">
-          <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Sign In</a>
+          <a href="signin" className="opacity-80 hover:opacity-100 transition-opacity">Sign In</a>
           <a
-            href="#"
+            href="register"
             className="rounded-full border border-white/60 px-5 py-2 font-medium hover:bg-white/10 transition-colors"
           >
             Join Us

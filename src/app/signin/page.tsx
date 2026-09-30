@@ -1,13 +1,14 @@
 import AuthLeft from "@/components/AuthLeft";
 import { FormInput } from "@/components/ui/FormInput";
 import { AuthButton } from "@/components/ui/AuthButton";
+import Link from "next/link";
 
 export default function Signin() {
   return (
     <section className="min-h-screen bg-[#003BE2] hero-grid ">
       <div className="max-w-360 mx-auto px-30 py-10">
         {/* Logo */}
-        <div className="flex items-center gap-2.5 pb-11">
+        <Link href="/" className="flex items-center gap-2.5 pb-11">
           <svg
             width="29"
             height="32"
@@ -34,7 +35,7 @@ export default function Signin() {
           >
             ByteSpace
           </span>
-        </div>
+        </Link>
 
         <div className="flex items-start gap-16">
           <div className="flex-1 space-y-4">
@@ -150,7 +151,7 @@ export default function Signin() {
             <p className="mt-16 text-center font-normal text-[14px] text-[#888888]">
               New user?{" "}
               <a
-                href="/signup"
+                href="/register"
                 className="font-normal text-[#003BE2] hover:underline"
               >
                 Create an account
